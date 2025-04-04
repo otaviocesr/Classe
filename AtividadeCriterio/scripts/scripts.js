@@ -25,7 +25,7 @@ class Funcionario {
 // QUE HERDA UMA CLASSE PAI, NESTE CASO GERENTE(FILHA) HERDA FUNCIONARIO(PAI)
 class Gerente extends Funcionario {
   // SUPER - UTILIZADO PARA CHAMAR O CONSTRUTOR DA CLASSE PAI
-  // E REUTILIZAR SEUS ATRIBUTOS
+  // E REUTILIZAR SEUS ATRIBUTOS!
   constructor(nome, salario, dataAdmissao, bonus, departamento) {
     super(nome, salario, dataAdmissao, bonus);
     this.departamento = departamento;
