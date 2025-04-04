@@ -6,10 +6,12 @@ class Funcionario {
     this.bonus = bonus;
   }
 
+  // FUNÇÃO PARA DEFINIR O VALOR DO BONUS
   calcularBonus() {
     return this.salario * this.bonus;
   }
 
+  // FUNÇÃO PARA A DESCRIÇÃO DOS FUNCIONÁRIOS
   exibirDetalhes() {
     console.log(
       `Funcionário: ${this.nome}, salário: R$${this.salario.toFixed(
@@ -31,6 +33,7 @@ class Gerente extends Funcionario {
     this.departamento = departamento;
   }
 
+  // FUNÇÃO PARA A DESCRIÇÃO DO GERENTE
   detalhesGerente() {
     console.log(
       `${this.nome} é gerente do setor ${
