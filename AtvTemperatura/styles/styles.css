@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  background-color: #141016;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/27cd5c43dd356482d3973ab331716c6e.jpg") center /
+    cover no-repeat;
+}
+
+.container {
+  width: 450px;
+  height: 550px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 7px;
+  border-radius: 15px;
+  box-shadow: 4px 5px 20px #fff;
+}
+
+.form_container {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+
+  margin-top: 10px;
+  border: 3px solid #fff;
+}
+
+.form_container .input_text {
+  background-color: transparent;
+  border-color: #fff;
+
+  font-size: 17px;
+  color: white;
+
+  outline: none;
+  border: none;
+}
+
+.div_info {
+  width: 90%;
+
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+}
+
+.image {
+  background: url("../images/ensolarado.jpg") center / cover no-repeat;
+  width: 100px;
+  height: 100px;
+}
+
+.div_details {
+  width: 90%;
+}
