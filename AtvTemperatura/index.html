@@ -22,23 +22,73 @@
   </head>
   <body>
     <section class="container">
-      <form action="" class="form_container">
+      <form action="" class="form_container" id="form_container">
         <i class="fa-solid fa-location-dot"></i>
-        <input type="text" class="input_text" />
-        <i class="fa-solid fa-magnifying-glass"></i>
+        <input
+          type="text"
+          class="input_text"
+          id="input_text"
+          placeholder="Cidade"
+        />
+        <button type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
       </form>
-
+      <h1 class="titulo" id="titulo">Cidade</h1>
       <div class="div_info_city">
-        <h1>Cidade</h1>
         <div class="div_info">
           <div>
-            <div class="image"></div>
-            <p>Temperatura</p>
-            <p>Estado do Tempo</p>
+            <img
+              src="./images/ensolarado.jpg"
+              alt=""
+              class="image"
+              id="image"
+            />
+          </div>
+          <div class="textos">
+            <p id="tempp1">32 <sup>C°</sup></p>
+            <p id="tempp2">Chuvoso</p>
           </div>
         </div>
 
-        <div class="div_details">display grid</div>
+        <div class="div_details">
+          <div class="div1">
+            <i class="fa-solid fa-temperature-high"> </i>
+
+            <p id="temp_max">
+              Temp. Máx
+              <br />
+              30 <sup>C°</sup>
+            </p>
+          </div>
+
+          <div class="div2">
+            <i class="fa-solid fa-temperature-low"> </i>
+            <p id="temp_min">
+              Temp. Min
+              <br />
+              15 <sup>C°</sup>
+            </p>
+          </div>
+
+          <div class="div3">
+            <i class="fa-solid fa-droplet"> </i>
+            <p id="umidade">
+              Umidade
+              <br />
+              69
+            </p>
+          </div>
+
+          <div class="div4">
+            <i class="fa-solid fa-wind"> </i>
+            <p id="vento">
+              Vento
+              <br />
+              28.1 Km/H
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   </body>
