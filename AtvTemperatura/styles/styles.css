@@ -12,13 +12,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../images/27cd5c43dd356482d3973ab331716c6e.jpg") center /
-    cover no-repeat;
+  background: url("../images/k.jpg") center / cover no-repeat;
 }
 
 .container {
   width: 450px;
-  height: 550px;
+  height: auto;
 
   display: flex;
   justify-content: center;
@@ -60,11 +59,54 @@ body {
   border: none;
 }
 
+.container .div_info,
+.container .div_info #div_imagem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  display: none;
+}
+
+.container .titulo.visible {
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 600;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+
+  visibility: visible;
+  opacity: 1;
+  overflow: visible;
+  display: block;
+}
+
 .container .div_info_city {
   display: flex;
   justify-content: center;
 
   flex-wrap: wrap;
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.container .div_info_city.visible {
+  visibility: visible;
+  opacity: 1;
+  height: 450px;
+  overflow: visible;
+  transition: all 0.5s ease-in-out;
 }
 
 .container .div_info_city .div_info {
@@ -83,12 +125,13 @@ body {
 
 .container .div_info_city .div_info .image {
   border-radius: 7px;
-  width: 200px;
+  width: 100px;
   height: 100%;
 }
 
 .container .div_details {
   width: 90%;
+  height: 200px;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -148,15 +191,16 @@ i {
   font-size: 40px;
 }
 
-.container .titulo {
-  margin-top: 10px;
-  text-align: center;
-  margin-bottom: 15px;
-  font-weight: 600;
-  color: #fff;
-}
-
 button {
   background-color: transparent;
   border: none;
+}
+
+.textos #clima {
+  color: rgba(255, 255, 255, 0.8);
+  font-style: italic;
+}
+
+#clima::first-letter {
+  text-transform: capitalize;
 }
